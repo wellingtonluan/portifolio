@@ -4,19 +4,16 @@ function toggleMode(){
     html.classList.toggle('light')
 
 
-    //PEGAR IMAGEM
+    //PEGAR A TAG IMAGEM
     const img = document.querySelector("#profile img")
 
+    //SUBSTITUIR A IMAGEM!
         if(html.classList.contains('light')){
-
+            //SE TIVER LIGHT MODE, ADICIONAR A IMAGEM LIGHT
             img.setAttribute('src','./assets/avatar-dark.png')
         }else{
             img.setAttribute('src','./assets/Avatar.png')
         }
-    //SUBSTITUIR A IMAGEM
-
-    //SE TIVER LIGHT MODE ADICIONAR LIGHT
-
     //SE TIVER SEM LIGHT MODE, MANTER IMAGEM NORMAL
 
 }
